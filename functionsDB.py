@@ -1,5 +1,4 @@
 import pymysql
-#CONEXION BD RUDIMENTARIA PERO JALA
 class DataBase:
     def __init__(self):
         self.connection = pymysql.connect(
@@ -10,7 +9,7 @@ class DataBase:
         )
         self.cursor = self.connection.cursor()
         print("Conexion establecida exitosamente")
-#AQUI YA ES UNA QUERY
+#QUERIES
     def select_user(self,name):
         sql = "SELECT * from usuario WHERE Nombre=" +"'"+ name+"'"
         try:
