@@ -8,7 +8,7 @@ from functions import fuciones
 bot = telebot.TeleBot(TELEGRAM_TOKEN)
 usuario={}
 #comandos /text
-#comandos DML Y DQL:
+
 
 #comandos bienbenidas
 @bot.message_handler(commands=["start","ayuda","help"])
